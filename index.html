@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style2.css">
+    <title>Bienestar Emocional</title>
+</head>
+<body>
+
+<!--Seccion chat-->      
+   
+            <div id="chatbot-container">
+            <button id="toggle-chat">💬</button>
+            <div id="chat-window" class="hidden">
+            <div id="chat-header">🧘 Apoyo emocional</div>
+            <div id="chat-body"></div>
+            <input type="text" id="chat-input" placeholder="¿Cómo te sientes hoy?" />
+            </div>
+        </div>
+<!--Fin Seccion chat-->
+
+<!--Seccion de Inicio-->
+    <section class="inicio" id="inicio">
+        <div class="contenido-seccion">
+            <header>
+                <div class="nav-bar" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <nav id="nav" class="nav">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#sobremi">Problema Emocional</a>                   
+                    <a href="#resumen">Automedicacion</a>
+                    <a href="#contacto">Contacto</a>
+                    <a href="autor.html">Nosotros</a>
+                </nav>
+                <div class="logo">
+                    REN<span class="Color">OVA</span>
+                </div>
+            </header>
+            <div class="info">
+                <h1>Bienestar Emocional Estudiantil</h1>
+                <h2>Salud Mental - Online</h2>
+                <div class="redes">
+                    <a href="https://share.google/AmDdxcx6xTvXPS15A"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://share.google/LBmWllVpTk1nYyGLO"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@unmrma_oficial?_t=8nm1YF88sqr&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/channel/UCE88nm3mMOPzwb2QcWR-ZYQ"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="foto">
+                <img src="img/logo.jpg" alt="Bienestar Estudiantil">
+            </div>
+        </div>
+    </section>
+<!---->
+    
+<!---->
+<!--Seccion Problema Emocional-->
+    <section class="sobremi" id="sobremi">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Identifica</h2>
+            <h3>¿Qué problema emocional estás enfrentando?</h3>
+            <p>Si tú o alguien que conoces necesita ayuda con problemas psicológicos, 
+                es crucial buscar apoyo profesional, ya que estas condiciones son tratables. 
+                Existen varias opciones de apoyo, incluyendo líneas de ayuda, psicólogos y recursos en línea.</p>
+            <p>A continuación te presentamos un proyecto en el cual puedes identificar la situacion que estas atravesando
+                y posteriormente buscar la ayuda adecuada.</p>
+
+<!--Seccion Identificar problema-->
+        <div class="fila">
+                <div class="col">
+                    <i class="fa-solid fa-face-frown"></i>
+                    <span class="titulo-detalle">Ansiedad</span>
+                    <p> La ansiedad es un sentimiento de miedo, temor e inquietud. 
+                        Puede hacer que sude, se sienta inquieto y tenso, y tener palpitaciones.
+                        Puede ser una reacción normal al estrés..</p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-face-sad-tear"></i>
+                    <span class="titulo-detalle">Depresión</span>
+                    <p>La depresión es un trastorno mental caracterizado fundamentalmente por la tristeza y el desánimo.
+                        Se asocia, además, con alteraciones físicas y cognitivas, ya que afecta al desarrollo funcional del paciente, 
+                        así como a las relaciones sociales o al lenguaje.</p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-face-flushed"></i>
+                    <span class="titulo-detalle">Estrés</span>
+                    <p>El estrés es un sentimiento de tensión física o emocional.
+                        Puede provenir de cualquier situación o pensamiento que lo haga sentir a uno frustrado, 
+                        furioso o nervioso.
+                    </p>
+                </div>
+            </div>
+<!--Fin Seccion Identificar problema-->
+<!--Seccion Mostar Ayuda-->          
+            <p class="especial">Obten Ayuda</p>
+            
+                <select id="tematica" class="select-grande" onchange="mostrarAyuda()">
+                     <option value="">¿Que sientes?</option>
+                     <option value="ansiedad">Ansiedad</option>
+                     <option value="depresion">Depresión</option>
+                     <option value="estres">Estrés</option>
+                     <option value="autoestima">Baja autoestima</option>
+                </select>
+                <div id="ayuda" class="respuesta"></div>
+<!--Fin Seccion Identificar problema-->
+<!--Seccion Galeria Imagenes-->
+               <section class="galeria scroll-reveal">
+                        <h2>Imágenes relacionadas</h2>
+                         <div id="imagenes" class="imagenes-grid"></div>
+                </section>
+<!--Fin Seccion Galeria Imagenes-->            
+        </div>
+    </section>
+<!-- FinSeccion Problema Emocional-->
+
+<!--Secccion habilidades-->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Tu depresión no es un problema tecnico</h2>
+            <h3>es una señal, Escuchala</h3>
+
+            <div class="fila">
+                <div class="col">
+                    <i class="fa-solid fa-smile"></i>
+                    <span class="h-detalle">Protégete</span>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span class="h-detalle">Perdónate</span>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-hands-holding-circle"></i>
+                    <span class="h-detalle">Valórate</span>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-handshake"></i>
+                    <span class="h-detalle">Ámate</span>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="h-detalle">Cuídate</span>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-seedling"></i>
+                    <span class="h-detalle">Edúcate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Seccion resumen-->
+    <section class="resumen" id="resumen">
+        <div class="contenido-seccion" >
+
+<!--Seccion del Test-->
+
+    <section id="test-emocional">
+        <h2>🧠 Test Emocional</h2>
+            <p>Responde estas preguntas para conocer tu estado emocional actual y recibir sugerencias personalizadas.</p>
+            <form id="emotional-test">
+            <div class="question">
+                <label>1. ¿Cómo describirías tu energía hoy?</label>
+                 <select name="energia">
+                        <option value="">Selecciona una opción</option>
+                        <option value="alta">Alta</option>
+                        <option value="media">Media</option>
+                        <option value="baja">Baja</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>2. ¿Has sentido ansiedad o preocupación?</label>
+                <select name="ansiedad">
+                         <option value="">Selecciona una opción</option>
+                         <option value="nada">Nada</option>
+                         <option value="leve">Leve</option>
+                         <option value="intensa">Intensa</option>
+                </select>
+            </div>
+
+            <div class="question">
+            <label>3. ¿Cuál ha sido tu estado de ánimo predominante?</label>
+            <select name="estado" >
+                <option value="">Selecciona una opción</option>
+                <option value="feliz">Feliz</option>
+                <option value="neutral">Neutral</option>
+                <option value="triste">Triste</option>
+                <option value="irritado">Irritado</option>
+            </select>
+            </div>
+
+            <div class="question">
+            <label>4. ¿Has dormido bien últimamente?</label>
+            <select name="sueño">
+                <option value="">Selecciona una opción</option>
+                <option value="sí">Sí</option>
+                <option value="algo">Algo</option>
+                <option value="no">No</option>
+            </select>
+            </div>
+
+            <div class="question">
+            <label>5. ¿Te has sentido acompañado emocionalmente?</label>
+            <select name="apoyo">
+                <option value="">Selecciona una opción</option>
+                <option value="sí">Sí</option>
+                <option value="poco">Poco</option>
+                <option value="no">No</option>
+            </select>
+            </div>
+
+            <div class="buttons">
+            <button type="submit">Ver resultado</button>
+            <button type="button" id="reset-test">Limpiar formulario</button>
+            </div>
+        </form>
+
+        <div id="resultado-test" class="resultado"></div>
+        </section>
+<!--Fin Seccion Test-->
+                
+                <style>
+                    /* Para el ancho y alto del select */
+                     .select-grande {
+                          width: 200px; /* Ancho del select */
+                          height: 38px;  /* Altura del select */
+                         }
+
+                    /* Para aumentar el tamaño de la letra dentro del select */
+                     .select-texto-grande {
+                      font-size: 22px; /* Tamaño de la letra */
+                        }
+
+                
+                </style>
+            <h2 class="titulo-seccion">Ten Cuidado</h2>  
+            <h3>Consecuencias de la Automedicación</h3>
+            <select id="problema" class="select-grande" onchange=" mostrariesgos()">
+                     <option value="">Conocelas</option>
+                     <option value="dependencia">Dependencia o adiccion</option>
+                     <option value="toxicidad">Toxicidad</option>
+                     <option value="reacciones">Reacciones adversas</option>
+                     <option value="resistencia">Resistencia</option>
+            </select>
+                <div id="medicamentos" class="respuesta"></div>                
+        </div>
+    </section>
+
+<!--Seccion Recursos-->
+    <section class="resumen">        
+      <h2>Recursos útiles</h2>
+      <ul>
+        <li><a href="https://www.who.int/es/news-room/fact-sheets/detail/mental-health-strengthening-our-response" target="_blank">Guía de salud mental (OMS)</a></li>
+        <li><a href="https://www.psicologiaymente.com/" target="_blank">Artículos sobre psicología</a></li>
+      </ul>  
+    </section>
+<!--Fin Seccion Recursos-->
+<!--Seccion Franja Blanca-->
+        <h2></h2>
+            <ul>
+                 <li> 
+                     <!--Seccion Video centrado-->
+                     <style>
+                         .video-centro {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin: 40px 0;
+                                        }
+                    </style>
+
+                    <div class="video-centro">
+                         <video width="640" height="360" controls>
+                             <source src="video.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                     <!--Fin Seccion Video centrado-->
+                 </li>
+                <li></li>
+             </ul>
+<!--Fin Seccion Franja Blanca-->
+
+<!--Seccion Formulario-->
+        <section class="resumen">
+            <h2>Ponte en Contacto ahora mismo!</h2>
+            <form action="https://formsubmit.co/orientacion@universidad.edu" method="POST" autocomplete="off">
+                    <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" id="nombre" name="nombre" placeholder="Aqui tu nombre"><br><br>
+                    <input type="email" id="correo" name="correo" required placeholder="Aqui tu email"> <br><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Aqui tu mensaje" > </textarea><br><br>
+                    <button type="button" onclick="enviarCorreo()">Enviar</button>
+            </form>
+        </section>
+<!--Fin Seccion Formulario-->
+
+<!--Seccion contacto-->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Visitanos</h2>
+            <h3>Donde encontranos</h3>
+           
+<!--Secccion Informacion contacto-->
+                <div class="fila">
+                    <div class="col">
+                         <h2>
+                             <i class="fa-solid fa-phone"></i> Teléfono
+                        </h2>
+                            <span class="info-contacto">+505 0000-0000</span>
+                </div>
+                <div class="col">
+                         <h2>
+                             <i class="fa-solid fa-envelope"></i> Correo electronico
+                        </h2>
+                             <span class="info-contacto">correoinstitucional@edu.ni</span>
+                </div>
+                <div class="col">
+                         <h2>
+                             <i class="fa-solid fa-globe"></i>Página web
+                         </h2>                   
+                            <span class="info-contacto">Universidad Ricardo Morales</span>
+                </div>                
+            </div>
+ <!-- Fin Secccion Informacion contacto-->
+
+            <div class="fila">
+                <div class="col">                    
+                    <span class="titulo-seccion">Despues del Primer Paso no dejaremos de andar jamas!</span>
+                </div>                                
+            </div>            
+        </div>
+    </section>
+    <script>
+         
+  </script>
+
+    <script src="funtion.js"></script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+/*******************Codigo Pagina Secundaria**************************/
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #00BCD4; /* Cian cerúleo */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.info {
+  padding: 20px;
+  background-color: #FFFFFF;
+  color: #333;
+  text-align: center;
+}
+
+.personas {
+  padding: 20px;
+  background-color: #8BC34A; /* Verde claro */
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.persona {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.persona img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+footer {
+  background-color: #005baa; /* Azul institucional */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.info-oculta {
+  display: none;
+  background-color: #f0f8ff;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.persona.active .info-oculta {
+  display: block;
+}

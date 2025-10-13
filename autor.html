@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universidad Nacional Multidisciplinaria</title>
+  <link rel="stylesheet" href="style3.css">
+  
+
+</head>
+<!-- Estilos del Boton atras -->
+        <style>
+            .boton-atras {
+              background-color: #007BFF;
+              color: white;
+              padding: 12px 24px;
+              border: none;
+              border-radius: 6px;
+              cursor: pointer;
+              font-size: 16px;
+              transition: background-color 0.3s ease;
+            }
+            
+            .boton-atras:hover {
+              background-color: #0056b3;
+            }
+          </style>
+<!-- Fin Estilos del Boton atras -->
+<body>
+  <header>
+    <img src="img/logo2.png" alt="Logo Universidad" class="logo">
+    <h1>Universidad Nacional Multidisciplinaria<br>Ricardo Morales Avilés</h1>
+  </header>
+
+  <section class="info">
+    <p>La Universidad Nacional Multidisciplinaria Ricardo Morales Avilés promueve el conocimiento, la educación integral y el desarrollo sostenible. Su escudo representa la naturaleza, el aprendizaje y el compromiso social.</p>
+  </section>
+
+  <section class="personas">
+    <h2>Conoce a Nuestro Equipo</h2>
+  <div class="galeria">
+    <div class="persona" onclick="mostrarInfo(0)">
+      <img src="img/F.jpg" alt="Persona 1">
+      <h3>Yasuara Mercedes Rueda</h3>
+      <div class="info-oculta">
+        <p>Telefono: (+505) ####-####</p>
+        <p>Especialidad: Farmacia</p>
+        <p>Email: persona1@unm.edu.ni</p>
+      </div>
+    </div>
+    <div class="persona" onclick="mostrarInfo(1)">
+      <img src="img/M.jpg" alt="Persona 2">
+      <h3>Reinaldo de Jesus Lopez Lopez</h3>
+      <div class="info-oculta">
+        <p>Telefono: (+505) ####-####</p>
+        <p>Especialidad: Ingenieria en Sistema</p>
+        <p>Email: persona2@unm.edu.ni</p>
+      </div>
+    </div>
+    <div class="persona" onclick="mostrarInfo(2)">
+      <img src="img/F.jpg" alt="Persona 3">
+      <h3>Maria Milagros Calero Morales</h3>
+      <div class="info-oculta">
+        <p>Telefono: (+505) ####-####</p>
+        <p>Especialidad:Psicologia</p>
+        <p>Email: persona2@unm.edu.ni</p>
+      </div>
+    </div>
+    <!-- Repite para persona3 y persona4 -->
+  </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Universidad Nacional Multidisciplinaria Ricardo Morales Avilés</p>
+  </footer>
+  <script>
+function mostrarInfo(index) {
+  const personas = document.querySelectorAll('.persona');
+  personas.forEach((p, i) => {
+    if (i === index) {
+      p.classList.toggle('active');
+    } else {
+      p.classList.remove('active');
+    }
+  });
+}
+</script>
+</body>
+<!--  Boton atras -->
+      <button class="boton-atras" onclick="volverAtras()">⬅ Atrás</button>
+  <!-- Script del Boton atras -->
+      <script>
+          function volverAtras() {
+            window.history.back();
+          }
+        </script>
+  <!-- Fin Script del Boton atras -->
+<!-- Fin Boton atras -->
+</html>
