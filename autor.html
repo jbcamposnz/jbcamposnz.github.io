@@ -11,7 +11,7 @@
 <!-- Estilos del Boton atras -->
         <style>
             .boton-atras {
-              background-color: #007BFF;
+              background-color: #005baa;
               color: white;
               padding: 12px 24px;
               border: none;
@@ -22,25 +22,37 @@
             }
             
             .boton-atras:hover {
-              background-color: #0056b3;
+              background-color: #eef0f3;
             }
           </style>
 <!-- Fin Estilos del Boton atras -->
 <body>
   <header>
-    <img src="img/logo2.png" alt="Logo Universidad" class="logo">
-    <h1>Universidad Nacional Multidisciplinaria<br>Ricardo Morales Avilés</h1>
+       <i><h1>Despues del Primer Paso<br>no pararemos de andar jamas!</h1></i>
   </header>
-
+<a href="https://share.google/LBmWllVpTk1nYyGLO"><i class="fa-brands fa-instagram"></i></a>
   <section class="info">
-    <p>La Universidad Nacional Multidisciplinaria Ricardo Morales Avilés promueve el conocimiento, la educación integral y el desarrollo sostenible. Su escudo representa la naturaleza, el aprendizaje y el compromiso social.</p>
+ 
+    <p>La Bandera está compuesta por dos franjas diagonales que representan la diversidad de individuos en una sola comunidad universitaria, en constante crecimiento y proyección, y en el centro el escudo institucional.
+
+Los colores representados son el verde claro color asociado a la naturaleza y su espiritualidad. Es uno de los más ligados a la idea de equilibrio, serenidad y calma, como un solo sistema vivo del que somos parte.
+
+Y el color cian cerúleo, representa el firmamento, la grandeza e infinidad del conocimiento y a su vez, confianza y patriotismo.
+
+Valores que caracterizan el compromiso de Ricardo Morales Avilés, como el gran intelectual y educador que fue.</p>
+<div class="fila">
+  <div class="col"><img src="mapa.jpg" alt=""></div>
+ 
+<a href="Reglamento-Estudiantil.pdf" class="download-btn" download>Descargar Reglamento</a>
+
+</div>
   </section>
 
   <section class="personas">
     <h2>Conoce a Nuestro Equipo</h2>
   <div class="galeria">
     <div class="persona" onclick="mostrarInfo(0)">
-      <img src="img/F.jpg" alt="Persona 1">
+      <img src="F.jpg" alt="Persona 1">
       <h3>Yasuara Mercedes Rueda</h3>
       <div class="info-oculta">
         <p>Telefono: (+505) ####-####</p>
@@ -49,7 +61,7 @@
       </div>
     </div>
     <div class="persona" onclick="mostrarInfo(1)">
-      <img src="img/M.jpg" alt="Persona 2">
+      <img src="M.jpg" alt="Persona 2">
       <h3>Reinaldo de Jesus Lopez Lopez</h3>
       <div class="info-oculta">
         <p>Telefono: (+505) ####-####</p>
@@ -58,7 +70,7 @@
       </div>
     </div>
     <div class="persona" onclick="mostrarInfo(2)">
-      <img src="img/F.jpg" alt="Persona 3">
+      <img src="F.jpg" alt="Persona 3">
       <h3>Maria Milagros Calero Morales</h3>
       <div class="info-oculta">
         <p>Telefono: (+505) ####-####</p>
@@ -72,6 +84,8 @@
   </section>
 
   <footer>
+    <!--  Boton atras -->
+      <button class="boton-atras" onclick="volverAtras()">⬅ Atrás</button>
     <p>&copy; 2025 Universidad Nacional Multidisciplinaria Ricardo Morales Avilés</p>
   </footer>
   <script>
@@ -86,9 +100,9 @@ function mostrarInfo(index) {
   });
 }
 </script>
+
 </body>
-<!--  Boton atras -->
-      <button class="boton-atras" onclick="volverAtras()">⬅ Atrás</button>
+
   <!-- Script del Boton atras -->
       <script>
           function volverAtras() {

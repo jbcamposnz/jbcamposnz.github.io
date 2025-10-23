@@ -48,11 +48,11 @@
                 <a href="https://share.google/LBmWllVpTk1nYyGLO"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.tiktok.com/@unmrma_oficial?_t=8nm1YF88sqr&_r=1"><i class="fa-brands fa-tiktok"></i></a>
                 <a href="https://www.youtube.com/channel/UCE88nm3mMOPzwb2QcWR-ZYQ"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.hotmail.com"><i class="fa-regular fa-envelope"></i></a>
                 </div>
             </div>
             <div class="foto">
-                <img src="img/logo.jpg" alt="Bienestar Estudiantil">
+                <img src="logo.jpg" alt="Bienestar Estudiantil">
             </div>
         </div>
     </section>
@@ -66,8 +66,8 @@
             <h3>¿Qué problema emocional estás enfrentando?</h3>
             <p>Si tú o alguien que conoces necesita ayuda con problemas psicológicos, 
                 es crucial buscar apoyo profesional, ya que estas condiciones son tratables. 
-                Existen varias opciones de apoyo, incluyendo líneas de ayuda, psicólogos y recursos en línea.</p>
-            <p>A continuación te presentamos un proyecto en el cual puedes identificar la situacion que estas atravesando
+                Existen varias opciones de apoyo, incluyendo líneas de ayuda, psicólogos y recursos en línea.</p><br>
+            <p>A continuación te presentamos un proyecto estudiantil en el cual puedes identificar la situacion que estas atravesando
                 y posteriormente buscar la ayuda adecuada.</p>
 
 <!--Seccion Identificar problema-->
@@ -110,7 +110,7 @@
 <!--Fin Seccion Identificar problema-->
 <!--Seccion Galeria Imagenes-->
                <section class="galeria scroll-reveal">
-                        <h2>Imágenes relacionadas</h2>
+                       <!-- <h2>Imágenes relacionadas</h2>-->
                          <div id="imagenes" class="imagenes-grid"></div>
                 </section>
 <!--Fin Seccion Galeria Imagenes-->            
@@ -251,14 +251,6 @@
         </div>
     </section>
 
-<!--Seccion Recursos-->
-    <section class="resumen">        
-      <h2>Recursos útiles</h2>
-      <ul>
-        <li><a href="https://www.who.int/es/news-room/fact-sheets/detail/mental-health-strengthening-our-response" target="_blank">Guía de salud mental (OMS)</a></li>
-        <li><a href="https://www.psicologiaymente.com/" target="_blank">Artículos sobre psicología</a></li>
-      </ul>  
-    </section>
 <!--Fin Seccion Recursos-->
 <!--Seccion Franja Blanca-->
         <h2></h2>
@@ -287,16 +279,22 @@
 <!--Fin Seccion Franja Blanca-->
 
 <!--Seccion Formulario-->
-        <section class="resumen">
-            <h2>Ponte en Contacto ahora mismo!</h2>
-            <form action="https://formsubmit.co/orientacion@universidad.edu" method="POST" autocomplete="off">
-                    <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" id="nombre" name="nombre" placeholder="Aqui tu nombre"><br><br>
-                    <input type="email" id="correo" name="correo" required placeholder="Aqui tu email"> <br><br>
-                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Aqui tu mensaje" > </textarea><br><br>
-                    <button type="button" onclick="enviarCorreo()">Enviar</button>
-            </form>
+    <section class="resumen">
+           <h2>¡Recibe nuestro boletín!</h2>
+              <button id="btnSuscribirse" onclick="mostrarFormulario()">Suscribirse</button>
+
+            <form id="formularioBoletin" onsubmit="enviarFormulario(event)">
+                <label for="nombre"><b>Nombre:</b></label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email"><b>Correo electrónico:</b></label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <input type="submit" value="Enviar">
+                <button type="button" onclick="ocultarFormulario()">Cancelar</button>
+            </form>  
+
+
         </section>
 <!--Fin Seccion Formulario-->
 
@@ -312,26 +310,26 @@
                          <h2>
                              <i class="fa-solid fa-phone"></i> Teléfono
                         </h2>
-                            <span class="info-contacto">+505 0000-0000</span>
+                            <span class="info-contacto" style="color: rgb(255, 253, 253); text-decoration: none;">+505 0000-0000</span>
                 </div>
                 <div class="col">
                          <h2>
                              <i class="fa-solid fa-envelope"></i> Correo electronico
                         </h2>
-                             <span class="info-contacto">correoinstitucional@edu.ni</span>
+                             <span class="info-contacto" style="color: rgb(255, 253, 253); text-decoration: none;">correoinstitucional@edu.ni</span>
                 </div>
                 <div class="col">
                          <h2>
-                             <i class="fa-solid fa-globe"></i>Página web
+                             <i class="fa-solid fa-route"></i>Donde Encontrarnos    
                          </h2>                   
-                            <span class="info-contacto">Universidad Ricardo Morales</span>
+                            <a href="https://maps.app.goo.gl/fN7iCBZoq63sqGof6" style="color: rgb(255, 253, 253); text-decoration: none;"><span class="info-contacto">Google Maps</span></a>
                 </div>                
             </div>
  <!-- Fin Secccion Informacion contacto-->
 
             <div class="fila">
                 <div class="col">                    
-                    <span class="titulo-seccion">Despues del Primer Paso no dejaremos de andar jamas!</span>
+                    <span class="titulo-seccion">Despues del primer paso no dejaremos de andar jamas!</span>
                 </div>                                
             </div>            
         </div>
