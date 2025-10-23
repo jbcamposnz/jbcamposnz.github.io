@@ -15,7 +15,7 @@ body {
   }
   
   .profile {
-    background-image: url("img/fondo\ habilidades.jpg");
+    background-image: url("habilidades.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;

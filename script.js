@@ -21,24 +21,24 @@ function mostrariesgos() {
    
     const imagenes = {
       ansiedad: [
-        "img/ansiedad1.jpg",
-        "img/ansiedad2.jpg",
-        "img/ansiedad3.jpg"
+        "ansiedad1.jpg",
+        "ansiedad2.jpg",
+        "ansiedad3.jpg"
       ],
       depresion: [
-        "img/depresion1.jpg",
-        "img/depresion2.jpg",
-        "img/depresion3.jpg"
+        "depresion1.jpg",
+        "depresion2.jpg",
+        "depresion3.jpg"
       ],
       estres: [
-        "img/estres1.jpg",
-        "img/estres2.jpg",
-        "img/estres3.jpg"
+        "estres1.jpg",
+        "estres2.jpg",
+        "estres3.jpg"
       ],
       autoestima: [
-        "img/autoestima1.jpg",
-        "img/autoestima2.jpg",
-        "img/autoestima3.jpg"
+        "autoestima1.jpg",
+        "autoestima2.jpg",
+        "autoestima3.jpg"
       ]
     };
   

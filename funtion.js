@@ -22,12 +22,26 @@ for(var x = 0; x <links.length;x++){
 }
 
 //Enviar correo
-    function enviarCorreo() {
-      const nombre = document.getElementById("nombre").value;
-      const mensaje = document.getElementById("mensaje").value;
-
-      // Simulación de envío
-      alert("Correo enviado a correoinstitucional@edu.ni\n\nDe: " + nombre + "\nMensaje: " + mensaje);
+     function mostrarFormulario() {
+      document.getElementById("formularioBoletin").style.display = "block";
+      document.getElementById("btnSuscribirse").style.display = "none";
     }
+
+    function ocultarFormulario() {
+      document.getElementById("formularioBoletin").reset();
+      document.getElementById("formularioBoletin").style.display = "none";
+      document.getElementById("btnSuscribirse").style.display = "inline-block";
+    }
+
+    function enviarFormulario(event) {
+      event.preventDefault(); // Evita el envío real
+      alert("¡Gracias por suscribirte al boletín!");
+      ocultarFormulario();
+    }
+
+
+
+
+
 
     

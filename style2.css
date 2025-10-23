@@ -4,6 +4,7 @@
     font-family: "Titillium web" ;
     margin: 0;
     padding: 0;
+    
 }
 html{
     scroll-behavior: smooth;
@@ -11,7 +12,7 @@ html{
 
 .inicio{
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), 
-    url("img/fondo2.jpg");
+    url("fondo.jpg");
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -121,9 +122,9 @@ html{
     font-family: "Yellowtail";
     font-size:1.5rem ;
 }
-/* Seccion sobre mi*/
+/* ***************************************************Seccion sobre mi*********************/
 .sobremi{
-    background-color:#e6e6e6 ;
+    background-color:#f4f4f4 ;
     padding: 140px 0 100px 0;
     text-align: center;
 }
@@ -132,20 +133,26 @@ html{
     margin: auto;
     padding: 0 10px;
 }
-.sobremi .contenido-seccion h3{
-    text-transform: uppercase;
+.sobremi .contenido-seccion h2{
+    
     font-size: 30px;
 }
+.sobremi .contenido-seccion h3{
+    text-transform: uppercase;   /*eSTILO MAYUSCULA*/
+    font-size: 30px;
+}
+
 
 .sobremi .contenido-seccion .especial{
     color: #15546b ;
     font-weight: bold;
     margin-top: 15px;
+    font-size: 30px;
 }
 .sobremi .contenido-seccion p{
     max-width: 700px;
     margin: auto;
-    color: #666;
+    color: #080cdd;
 }
 .sobremi .contenido-seccion .fila{
     display: flex;
@@ -171,12 +178,15 @@ html{
     font-weight: bold;
     margin: 8px 0;
 }
+.sobremi .contenido-seccion .respuesta{
+    font-size: 20px;
+}
 /*Seccion habilidades*/
 .habilidades{
     padding: 80px 0 100px 0;
     text-align: center;
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), 
-    url("img/fondo\ habilidades.jpg");
+    url("habilidades.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -218,7 +228,7 @@ html{
 }
 /*seccion resumen*/
 .resumen{
-    background-color: #e6e6e6;
+    background-color: #f2f2f2;
     padding:80px 0 100px 0;
     text-align: center;
 }
@@ -277,9 +287,9 @@ html{
 }
 /*SECCION CONTACTOP*/
 .contacto{
-    background-color: #202020;
-    padding: 30px 0 100px 0;
-    color: #e6e6e6;
+    background-color: #8BC34A;
+    padding: 30px 0 30px 0;
+    color: #f4f4f4;
     text-align: center;
 }
 .contacto .contenido-seccion{
@@ -443,8 +453,8 @@ html{
 /************Test Emocional*************/
 
 #test-emocional {
-  background: #fff;
-  padding: 20px;
+  background-color:#f4f4f4 ;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   max-width: 600px;
@@ -528,3 +538,59 @@ html{
   height: 450px;
   opacity: 1;
 }
+/**************Boltin*************/
+#formularioBoletin {
+      font-family: Arial, sans-serif;
+      display: none;
+      margin-top: 20px;
+      
+      
+    }
+ 
+#btnSuscribirse {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #btnSuscribirse:hover {
+      background-color: #0056b3;
+    }
+
+   #formularioBoletin {
+      display: none;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+     
+      border-radius: 8px;
+      /*background-color: #6c28da;*/
+      background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), 
+    url("suscribete.jpg");
+    }
+
+    input[type="submit"],
+    button[type="button"] {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+
+    button[type="button"]:hover {
+      background-color: #1e7e34;
+    }
+
